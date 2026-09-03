@@ -1,3 +1,26 @@
+# Environment & Secrets
 .env
+.env.*
+*.env
+**/.env
+
+# Python compilation & cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor & IDE artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
