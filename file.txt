@@ -43,18 +43,6 @@ Instead of manually updating statistics every time I solve a problem or push cod
 
  • Featured repositories
 
-🧩 Live LeetCode Dashboard
-
- • Problems solved
-
- • Difficulty breakdown
-
- • Current streak
-
- • Acceptance rate
-
- • Contribution heatmap
-
 📝 Technical Blog
 
  • Notes and write-ups on networking, Linux, SQL, cybersecurity, and projects

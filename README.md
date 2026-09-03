@@ -1,200 +1,98 @@
-# Charan Reddy Muli — Portfolio
+# Peeyush Kr Singh — Portfolio
 
-> Cyber Security & Digital Forensics Student building practical security tools, automation workflows, and secure software.
-
-🌐 **Live Portfolio:** https://charanreddy.qzz.io/
+> Computer Science undergraduate with a strong foundation in programming, data structures, algorithms, operating systems, Linux environments, and cybersecurity fundamentals.
 
 ---
 
 ## 👋 About
 
-I'm **Charan Reddy Muli**, a Computer Science Engineering student specializing in **Cyber Security & Digital Forensics** at **VIT Bhopal University**.
+I'm **Peeyush Kr Singh**, a Computer Science and Engineering student at **Quantum Global Campus**.
 
 My interests sit at the intersection of:
 
-* Application Security
-* AI Security
-* DevSecOps
-* Digital Forensics
-* Networking & Security
-* Security Automation
+* Data Structures & Algorithms
+* Linux & Security Practice
 * Secure Software Development
+* System Hardening Concepts
+* Core Computer Science Fundamentals
+* Problem Solving
 
-I enjoy building practical tools and automating workflows rather than only studying security concepts theoretically.
+I focus on secure software development, core CS principles, and hands-on Linux system security.
 
 ---
 
 ## 🚀 What You'll Find Here
 
-My portfolio brings together my projects, technical learning, competitive programming activity, GitHub contributions, and security-focused experiments.
+My portfolio brings together my projects, practical simulations, education, certifications, and technical skills.
 
-### Featured Projects
+### Practical Projects & Simulations
 
-#### 🔄 LeetCode Sync
+#### 🛡️ Cybersecurity Job Simulations (Deloitte, Tata Group)
 
-An automated pipeline that synchronizes accepted LeetCode solutions to GitHub.
+Simulated security assessments involving threat modeling, vulnerability identification, and basic risk analysis.
 
-**Tech:** Python · GraphQL · SQLite · GitHub Actions
-
-Key features include:
-
-* Automatically tracking accepted solutions
-* Synchronizing solutions with GitHub
-* Tracking submission state
-* Maintaining clean solution history
-* Rollback handling for regressions
+* Performed simulated security assessments involving threat modeling & vulnerability identification
+* Analyzed security incidents and system scenarios to understand attack surfaces and mitigation techniques
 
 ---
 
-#### 🌐 Port Scanner
+#### 🐧 Linux System and Security Practice
 
-A TCP port scanner built using raw sockets to understand the fundamentals of network reconnaissance and connection handling.
+Hands-on administration and security practice in Linux environments.
 
-**Tech:** Python · Sockets
-
-> Educational project for understanding networking and security concepts.
+* Worked with Linux file systems, permissions, processes, and user management using CLI utilities
+* Practiced access control, privilege management, and basic system hardening in Kali Linux environments
 
 ---
 
-#### ⌨️ Educational Keylogger
+#### 💻 Academic Programming Projects
 
-A Windows API keylogging proof-of-concept created strictly for educational purposes and controlled environments.
+Core software and algorithm projects in C, C++, Java, and HTML/CSS.
 
-**Tech:** Python · Windows API
-
-> ⚠️ This project is intended only for learning input-capture mechanics in sandboxed environments.
+* Developed programs in C and C++ focusing on control structures, memory management, and algorithmic problem-solving
+* Implemented Java applications using OOP concepts (classes, inheritance, encapsulation)
+* Built static web layouts using HTML and CSS
 
 ---
 
 ## 🧰 Tech Stack
 
-### Programming
+### Programming Languages
+`C` `C++` `Java` `Python`
 
-`Python` `Java` `C++`
+### Cybersecurity & Operating Systems
+`Linux (Kali, Ubuntu)` `Windows` `Ethical Hacking Basics` `Linux Security` `System Hardening`
 
-### Security & Infrastructure
+### Web & Databases
+`HTML` `CSS` `SQL`
 
-`Linux` `Docker` `Networking` `GitHub Actions`
-
-### Databases
-
-`SQLite` `MySQL`
-
-### Tools
-
-`Git` `GitHub` `VS Code`
+### Tools & CS Core
+`Git` `VirtualBox` `Linux Command Line` `Data Structures & Algorithms` `OOP`
 
 ---
 
-## 🧩 Portfolio Sections
+## 📄 Education
 
-The website includes:
-
-*  **Home** — Introduction and current focus
-*  **About** — Background and education
-*  **Skills** — Programming, security, databases and tooling
-*  **Projects** — Selected technical projects
-*  **LeetCode** — Problem-solving statistics and contribution activity
-*  **GitHub** — Repository and contribution activity
-*  **Blog** — Technical notes and write-ups
-*  **Achievements** — Selected milestones
-*  **Contact** — Collaboration and internship opportunities
+* **Bachelor of Technology in Computer Science and Engineering** — Quantum Global Campus (2024 – 2028)
+* **Senior Secondary (PCMC)** — D.C. Lewis Memorial School (2021 – 2022)
 
 ---
 
-## 📚 Technical Writing
+## 📜 Certifications
 
-I also document things I'm learning and building, including topics such as:
-
-* Networking fundamentals
-* DHCP, NAT and public/private IPs
-* TCP/IP
-* Linux commands
-* Linux filesystem structure
-* SQL fundamentals
-* Building the LeetCode Sync pipeline
-
----
-
-## 🗺️ Journey
-
-```text
-2024
-└── Started Cyber Security Journey
-    └── Application Security & Digital Forensics fundamentals
-
-2026
-├── Built Port Scanner
-├── Built Educational Keylogger
-└── Built LeetCode Sync
-    └── GitHub Actions + GraphQL + SQLite
-
-Future
-└── Application Security Engineer
-```
-
----
-
-## 🎯 Current Focus
-
-I'm currently focused on developing stronger skills in:
-
-* Application Security
-* Secure Software Development
-* DevSecOps
-* Security Automation
-* Networking
-* AI Security
-* Offensive Security Fundamentals
-
-My long-term goal is to work on systems where **security, software engineering, and automation meet**.
-
----
-
-## 📊 Portfolio
-
-The website also integrates activity from:
-
-* GitHub
-* LeetCode
-* GitHub Actions
-* LeetCode GraphQL APIs
-
-This allows the portfolio to present both **projects I've built** and **my ongoing development activity**.
-
----
-
-## 🤝 Open To
-
-I'm interested in:
-
-*  Security internships
-*  Security research collaborations
-*  Application security projects
-*  Security automation
-*  Networking/security projects
-*  Interesting engineering problems
+* Introduction to Cybersecurity
+* Deloitte Australia – Cyber Job Simulation
+* Tata Group – Cybersecurity Analyst Job Simulation
+* Cybersecurity Nexus (CSX / CSXP)
 
 ---
 
 ## 🌐 Connect
 
-**Portfolio:**
-https://charanreddy.qzz.io/
-
-**GitHub:**
-https://github.com/charanreddy0007/
-
-**LeetCode:**
-https://leetcode.com/charanreddy0007/
-
----
-
-## ⚠️ Disclaimer
-
-Some security-related projects on this portfolio are created strictly for **educational and controlled environments**.
-
-Do not use security tools against systems, networks, accounts, or data without explicit authorization.
+* **GitHub:** [github.com/Peeyush3587](https://github.com/Peeyush3587)
+* **LinkedIn:** [linkedin.com/in/peeyush-kumar-singh-48a565239](https://www.linkedin.com/in/peeyush-kumar-singh-48a565239)
+* **Email:** peeyushkrsingh1@gmail.com
+* **Location:** Varanasi, Uttar Pradesh, India
 
 ---
 
@@ -204,24 +102,10 @@ Do not use security tools against systems, networks, accounts, or data without e
 HTML
 CSS
 JavaScript
-GitHub API
-LeetCode GraphQL
-GitHub Actions
-Python
-SQLite
 ```
 
 ---
 
-## 📄 License
-
-### MIT License
----
-
 <p align="center">
-  Built with curiosity, security, and a lot of debugging.
-</p>
-
-<p align="center">
-  <b>© 2026 Charan Reddy Muli</b>
+  <b>© 2026 Peeyush Kr Singh</b>
 </p>

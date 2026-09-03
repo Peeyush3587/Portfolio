@@ -1,22 +1,22 @@
 {
     "data": {
         "user": {
-            "login": "Charanreddy0007",
-            "name": "Charan reddy",
-            "avatarUrl": "https://avatars.githubusercontent.com/u/135025143?u=101d6a5836a7572020bc707be768c59118ff2e59&v=4",
-            "bio": "CSE student | Cybersecurity & Digital Forensics | Skilled in Python & Java | Exploring tech and innovation",
+            "login": "Peeyush3587",
+            "name": "Peeyush Kr. Singh",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/175531191?u=303c76364629c229d84a38764526ab9d85b05c76&v=4",
+            "bio": "\u26a1404: Bugs & Breaches Not Found\r\nCybersecurity & software development enthusiast, securing systems and optimizing code. Always learning, always building.",
             "followers": {
                 "totalCount": 3
             },
             "following": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repoCount": {
-                "totalCount": 11
+                "totalCount": 1
             },
             "contributionsCollection": {
                 "contributionCalendar": {
-                    "totalContributions": 384,
+                    "totalContributions": 107,
                     "weeks": [
                         {
                             "contributionDays": [
@@ -832,8 +832,8 @@
                                 },
                                 {
                                     "date": "2026-01-24",
-                                    "contributionCount": 6,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -841,8 +841,8 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-01-25",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-01-26",
@@ -973,8 +973,8 @@
                                 },
                                 {
                                     "date": "2026-02-18",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-02-19",
@@ -1007,18 +1007,18 @@
                                 },
                                 {
                                     "date": "2026-02-24",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-02-25",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-02-26",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-02-27",
@@ -1139,13 +1139,13 @@
                                 },
                                 {
                                     "date": "2026-03-20",
-                                    "contributionCount": 9,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-03-21",
-                                    "contributionCount": 8,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -1163,8 +1163,8 @@
                                 },
                                 {
                                     "date": "2026-03-24",
-                                    "contributionCount": 9,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-03-25",
@@ -1183,8 +1183,8 @@
                                 },
                                 {
                                     "date": "2026-03-28",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -1192,8 +1192,8 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-03-29",
-                                    "contributionCount": 12,
-                                    "contributionLevel": "SECOND_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-03-30",
@@ -1236,8 +1236,8 @@
                                 },
                                 {
                                     "date": "2026-04-06",
-                                    "contributionCount": 6,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-04-07",
@@ -1256,8 +1256,8 @@
                                 },
                                 {
                                     "date": "2026-04-10",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-04-11",
@@ -1319,8 +1319,8 @@
                                 },
                                 {
                                     "date": "2026-04-21",
-                                    "contributionCount": 0,
-                                    "contributionLevel": "NONE"
+                                    "contributionCount": 2,
+                                    "contributionLevel": "THIRD_QUARTILE"
                                 },
                                 {
                                     "date": "2026-04-22",
@@ -1475,8 +1475,8 @@
                                 },
                                 {
                                     "date": "2026-05-19",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-05-20",
@@ -1485,8 +1485,8 @@
                                 },
                                 {
                                     "date": "2026-05-21",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-05-22",
@@ -1514,18 +1514,18 @@
                                 },
                                 {
                                     "date": "2026-05-26",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-05-27",
-                                    "contributionCount": 8,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-05-28",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-05-29",
@@ -1582,8 +1582,8 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-06-07",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-06-08",
@@ -1592,8 +1592,8 @@
                                 },
                                 {
                                     "date": "2026-06-09",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-06-10",
@@ -1699,8 +1699,8 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-06-28",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-06-29",
@@ -1768,8 +1768,8 @@
                                 },
                                 {
                                     "date": "2026-07-11",
-                                    "contributionCount": 0,
-                                    "contributionLevel": "NONE"
+                                    "contributionCount": 53,
+                                    "contributionLevel": "FOURTH_QUARTILE"
                                 }
                             ]
                         },
@@ -1777,38 +1777,38 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-07-12",
+                                    "contributionCount": 31,
+                                    "contributionLevel": "FOURTH_QUARTILE"
+                                },
+                                {
+                                    "date": "2026-07-13",
+                                    "contributionCount": 3,
+                                    "contributionLevel": "FOURTH_QUARTILE"
+                                },
+                                {
+                                    "date": "2026-07-14",
                                     "contributionCount": 0,
                                     "contributionLevel": "NONE"
                                 },
                                 {
-                                    "date": "2026-07-13",
-                                    "contributionCount": 13,
-                                    "contributionLevel": "SECOND_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-07-14",
-                                    "contributionCount": 31,
-                                    "contributionLevel": "THIRD_QUARTILE"
-                                },
-                                {
                                     "date": "2026-07-15",
-                                    "contributionCount": 20,
-                                    "contributionLevel": "SECOND_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-16",
-                                    "contributionCount": 8,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-17",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-18",
-                                    "contributionCount": 10,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -1816,38 +1816,38 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-07-19",
-                                    "contributionCount": 7,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-20",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-21",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-22",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-23",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-24",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-25",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -1855,38 +1855,38 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-07-26",
-                                    "contributionCount": 8,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-27",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-28",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-29",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-30",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-07-31",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-01",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -1894,28 +1894,28 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-08-02",
-                                    "contributionCount": 26,
-                                    "contributionLevel": "THIRD_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-03",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-04",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-05",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-06",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-07",
@@ -1924,45 +1924,6 @@
                                 },
                                 {
                                     "date": "2026-08-08",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                }
-                            ]
-                        },
-                        {
-                            "contributionDays": [
-                                {
-                                    "date": "2026-08-09",
-                                    "contributionCount": 9,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-10",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-11",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-12",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-13",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-14",
-                                    "contributionCount": 12,
-                                    "contributionLevel": "SECOND_QUARTILE"
-                                },
-                                {
-                                    "date": "2026-08-15",
                                     "contributionCount": 0,
                                     "contributionLevel": "NONE"
                                 }
@@ -1971,39 +1932,78 @@
                         {
                             "contributionDays": [
                                 {
+                                    "date": "2026-08-09",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-10",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-11",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-12",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-13",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-14",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-08-15",
+                                    "contributionCount": 2,
+                                    "contributionLevel": "THIRD_QUARTILE"
+                                }
+                            ]
+                        },
+                        {
+                            "contributionDays": [
+                                {
                                     "date": "2026-08-16",
-                                    "contributionCount": 11,
-                                    "contributionLevel": "SECOND_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-17",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 15,
+                                    "contributionLevel": "FOURTH_QUARTILE"
                                 },
                                 {
                                     "date": "2026-08-18",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-19",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-20",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-21",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 1,
+                                    "contributionLevel": "SECOND_QUARTILE"
                                 },
                                 {
                                     "date": "2026-08-22",
-                                    "contributionCount": 2,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -2011,38 +2011,38 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-08-23",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-24",
-                                    "contributionCount": 4,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-25",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-26",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-27",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-28",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-29",
-                                    "contributionCount": 43,
-                                    "contributionLevel": "FOURTH_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 }
                             ]
                         },
@@ -2050,21 +2050,26 @@
                             "contributionDays": [
                                 {
                                     "date": "2026-08-30",
-                                    "contributionCount": 5,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-08-31",
-                                    "contributionCount": 1,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-09-01",
-                                    "contributionCount": 3,
-                                    "contributionLevel": "FIRST_QUARTILE"
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
                                 },
                                 {
                                     "date": "2026-09-02",
+                                    "contributionCount": 0,
+                                    "contributionLevel": "NONE"
+                                },
+                                {
+                                    "date": "2026-09-03",
                                     "contributionCount": 0,
                                     "contributionLevel": "NONE"
                                 }
@@ -2076,32 +2081,10 @@
             "topRepositories": {
                 "nodes": [
                     {
-                        "name": "LeetCode-Sync",
-                        "description": "Automatically synchronize accepted LeetCode solutions to GitHub with GraphQL, SQLite state management, README generation, and GitHub Actions.",
-                        "url": "https://github.com/Charanreddy0007/LeetCode-Sync",
-                        "stargazerCount": 1,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 26133,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "LeetCode-Solutions",
-                        "description": "Automatically synchronized archive of accepted LeetCode solutions generated by LeetCode Sync.",
-                        "url": "https://github.com/Charanreddy0007/LeetCode-Solutions",
-                        "stargazerCount": 1,
+                        "name": "Java-Logic-Building",
+                        "description": "Structured Java logic-building practice covering conditionals, loops, patterns, recursion, arrays, strings, and mixed challenges before DSA",
+                        "url": "https://github.com/Peeyush3587/Java-Logic-Building",
+                        "stargazerCount": 0,
                         "forkCount": 0,
                         "primaryLanguage": {
                             "name": "Java",
@@ -2110,243 +2093,10 @@
                         "languages": {
                             "edges": [
                                 {
-                                    "size": 34563,
+                                    "size": 11321,
                                     "node": {
                                         "name": "Java",
                                         "color": "#b07219"
-                                    }
-                                },
-                                {
-                                    "size": 4702,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                },
-                                {
-                                    "size": 500,
-                                    "node": {
-                                        "name": "C++",
-                                        "color": "#f34b7d"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "developer-portfolios",
-                        "description": "A list of developer portfolios for your inspiration",
-                        "url": "https://github.com/Charanreddy0007/developer-portfolios",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 70542,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "Portfolio",
-                        "description": null,
-                        "url": "https://github.com/Charanreddy0007/Portfolio",
-                        "stargazerCount": 0,
-                        "forkCount": 1,
-                        "primaryLanguage": {
-                            "name": "HTML",
-                            "color": "#e34c26"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 97100,
-                                    "node": {
-                                        "name": "HTML",
-                                        "color": "#e34c26"
-                                    }
-                                },
-                                {
-                                    "size": 31148,
-                                    "node": {
-                                        "name": "CSS",
-                                        "color": "#663399"
-                                    }
-                                },
-                                {
-                                    "size": 24384,
-                                    "node": {
-                                        "name": "JavaScript",
-                                        "color": "#f1e05a"
-                                    }
-                                },
-                                {
-                                    "size": 8837,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "Charanreddy0007",
-                        "description": null,
-                        "url": "https://github.com/Charanreddy0007/Charanreddy0007",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 29707,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "QR-File-Transfer-System",
-                        "description": "QR File Transfer Experiment using Python, OpenCV, and QR Codes. This fun project transfers files visually between two laptops by converting file chunks into dynamically changing QR codes and reconstructing them through webcam scanning. Not practical for large files \u2014 just a creative computer vision + data transmission experiment.",
-                        "url": "https://github.com/Charanreddy0007/QR-File-Transfer-System",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 2421,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "machine-learning-ddos-detection-iot",
-                        "description": "Detection of DDoS attacks in Healthcare IoT networks using Random Forest and MQTT dataset (Group Project).",
-                        "url": "https://github.com/Charanreddy0007/machine-learning-ddos-detection-iot",
-                        "stargazerCount": 0,
-                        "forkCount": 1,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 13810,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "Python-Keystroke-Logger-Educational-Project-",
-                        "description": "A Python-based keyboard activity monitoring tool built for educational purposes. Demonstrates keystroke logging, multithreading, file handling, and email automation while emphasizing ethical use and user consent.",
-                        "url": "https://github.com/Charanreddy0007/Python-Keystroke-Logger-Educational-Project-",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 4411,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "Multi-Threaded_Port_Scanner",
-                        "description": null,
-                        "url": "https://github.com/Charanreddy0007/Multi-Threaded_Port_Scanner",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 1421,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "oss-audit-24BCY10254",
-                        "description": null,
-                        "url": "https://github.com/Charanreddy0007/oss-audit-24BCY10254",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Shell",
-                            "color": "#89e051"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 18467,
-                                    "node": {
-                                        "name": "Shell",
-                                        "color": "#89e051"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "First_git",
-                        "description": "This is my first git project",
-                        "url": "https://github.com/Charanreddy0007/First_git",
-                        "stargazerCount": 0,
-                        "forkCount": 0,
-                        "primaryLanguage": {
-                            "name": "Python",
-                            "color": "#3572A5"
-                        },
-                        "languages": {
-                            "edges": [
-                                {
-                                    "size": 20,
-                                    "node": {
-                                        "name": "Python",
-                                        "color": "#3572A5"
                                     }
                                 }
                             ]
@@ -2356,39 +2106,9 @@
             },
             "languageBreakdown": [
                 {
-                    "name": "Python",
-                    "percentage": 44.0,
-                    "color": "#3572A5"
-                },
-                {
-                    "name": "HTML",
-                    "percentage": 26.37,
-                    "color": "#e34c26"
-                },
-                {
                     "name": "Java",
-                    "percentage": 9.39,
+                    "percentage": 100.0,
                     "color": "#b07219"
-                },
-                {
-                    "name": "CSS",
-                    "percentage": 8.46,
-                    "color": "#663399"
-                },
-                {
-                    "name": "JavaScript",
-                    "percentage": 6.62,
-                    "color": "#f1e05a"
-                },
-                {
-                    "name": "Shell",
-                    "percentage": 5.02,
-                    "color": "#89e051"
-                },
-                {
-                    "name": "C++",
-                    "percentage": 0.14,
-                    "color": "#f34b7d"
                 }
             ]
         },

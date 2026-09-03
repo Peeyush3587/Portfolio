@@ -82,11 +82,11 @@ if(diffSection) diffIO.observe(diffSection);
 const termBody = document.getElementById('termBody');
 const termScript = [
   {type:'cmd', text:'whoami'},
-  {type:'out', text:'charan'},
+  {type:'out', text:'peeyush'},
   {type:'cmd', text:'skills'},
-  {type:'out', text:'Python\nLinux\nDocker\nNetworking\nGitHub Actions'},
+  {type:'out', text:'C / C++\nJava\nPython\nLinux & Cybersecurity\nData Structures'},
   {type:'cmd', text:'status'},
-  {type:'out', text:'Building secure software...'},
+  {type:'out', text:'Building secure software & problem-solving...'},
 ];
 async function typeLine(text, className){
   const line = document.createElement('div');
@@ -104,7 +104,7 @@ async function runTerminal(){
       const line = document.createElement('div');
       line.className='term-line';
       termBody.appendChild(line);
-      let prompt = '<span class="term-prompt">charan@secbox</span><span style="color:var(--text-dim);">:~$ </span>';
+      let prompt = '<span class="term-prompt">peeyush@devbox</span><span style="color:var(--text-dim);">:~$ </span>';
       line.innerHTML = prompt;
       let content='';
       for(let i=0;i<step.text.length;i++){
@@ -128,66 +128,6 @@ async function runTerminal(){
 }
 runTerminal();
 
-/* ---------- Dificulty --------- */
-
-fetch("data/LeetcodeResponse.json")
-  .then(response => response.json())
-  .then(data => {
-
-    const rank = data.data.matchedUser.profile.ranking;
-
-    const totalAc = data.data.matchedUser.submitStats.acSubmissionNum[0].count;
-    const easyAc = data.data.matchedUser.submitStats.acSubmissionNum[1].count;
-    const mediumAc = data.data.matchedUser.submitStats.acSubmissionNum[2].count;
-    const hardAc = data.data.matchedUser.submitStats.acSubmissionNum[3].count;
-
-    const acceptedSubmissions = data.data.matchedUser.submitStats.acSubmissionNum[0].submissions;
-    const totalSubmissions = data.data.matchedUser.submitStats.totalSubmissionNum[0].submissions;
-
-    const avatarLeetcode = data.data.matchedUser.profile.userAvatar;
-    const usernameLeetcode = data.data.matchedUserusername;
-    const streak = data.data.matchedUser.userCalendar.streak;
-    const Accp = ((acceptedSubmissions / totalSubmissions) * 100).toFixed(1);
-
-    
-    document.getElementById("rank").textContent = rank.toLocaleString('en-US')
-    document.getElementById("achievement-leetcode").textContent = totalAc;
-    
-    const solvedEl = document.getElementById("solvedCount");
-    solvedEl.dataset.target = totalAc;
-
-    const streakEl = document.getElementById("streakCount");
-    streakEl.dataset.target = streak;
-
-    const totalPe = document.getElementById("acceptanceCount");
-    totalPe.dataset.target = Accp;
-
-    document.getElementById("leetcode-avatar").src = avatarLeetcode;
-    document.getElementById("leetcode-username").textContent = usernameLeetcode;
-
-    document.getElementById("profileStreak").textContent = streak + " days";
-    document.getElementById("profileAcceptance").textContent = Accp + " %";
-
-    renderLeetCodeBadges(data);
-
-    document.getElementById("easyCount").textContent = easyAc;
-    document.getElementById("mediumCount").textContent = mediumAc;
-    document.getElementById("hardCount").textContent = hardAc;
-
-    document.getElementById("easyBar").style.width =
-        (easyAc / totalAc * 100) + "%";
-
-    document.getElementById("mediumBar").style.width =
-        (mediumAc / totalAc * 100) + "%";
-
-    document.getElementById("hardBar").style.width =
-        (hardAc / totalAc * 100) + "%";
-
-    counters.forEach(c => counterIO.observe(c));
-  })
-  .catch(console.error);
-
-
 /* ---------- counters ---------- */
 const counters = document.querySelectorAll('.counter');
 const counterIO = new IntersectionObserver((entries)=>{
@@ -196,6 +136,7 @@ const counterIO = new IntersectionObserver((entries)=>{
     if(entry.isIntersecting){
       const el = entry.target;
       const target = parseInt(el.dataset.target,10);
+      if(isNaN(target)) return;   // data-target not set yet — skip, will re-observe after fetch
       let cur=0; const step = Math.max(1, Math.floor(target/50));
       const t = setInterval(()=>{
         cur += step;
@@ -206,6 +147,7 @@ const counterIO = new IntersectionObserver((entries)=>{
     }
   });
 },{threshold:0.4});
+counters.forEach(c => counterIO.observe(c));
 
 /* ---------- heatmaps ---------- */
 function buildHeatmap(id, calendar) {
@@ -289,114 +231,7 @@ function buildHeatmap(id, calendar) {
     }
 }
 
-fetch("data/LeetcodeResponse.json")
-    .then(response => response.json())
-    .then(data => {
 
-        const calendar = JSON.parse(
-            data.data.matchedUser.submissionCalendar
-        );
-
-        buildHeatmap("heatmap", calendar);
-
-    })
-    .catch(console.error);
-
-
-/* -------- Badge ----------*/
-
-function renderLeetCodeBadges(userData) {
-  const badgeContainer = document.getElementById("leetcodeBadges");
-  const badgeCount = document.getElementById("badgeCount");
-
-  if (!badgeContainer) return;
-
-  const badges = userData?.data?.matchedUser?.badges || [];
-
-  // --------------------------------
-  // BADGE PRIORITY
-  // --------------------------------
-  function getBadgePriority(badge) {
-    const name = badge.displayName.toLowerCase();
-
-    // Streak / milestone badges
-    if (name.includes("days badge")) return 100;
-
-    // Major achievement
-    if (name.includes("guardian")) return 90;
-
-    // Other badges
-    return 10;
-  }
-
-  // --------------------------------
-  // SORT BADGES
-  // --------------------------------
-  const sortedBadges = [...badges].sort((a, b) => {
-
-    const priorityA = getBadgePriority(a);
-    const priorityB = getBadgePriority(b);
-
-    if (priorityA !== priorityB) {
-      return priorityB - priorityA;
-    }
-
-    return new Date(b.creationDate) - new Date(a.creationDate);
-  });
-
-  // --------------------------------
-  // TOP 4 ONLY
-  // --------------------------------
-  const latestBadges = sortedBadges.slice(0, 8);
-
-  // Total badge count
-  if (badgeCount) {
-    badgeCount.textContent = badges.length;
-  }
-
-  badgeContainer.innerHTML = "";
-
-  if (latestBadges.length === 0) {
-    badgeContainer.innerHTML = `
-      <span class="mono" style="
-        font-size:10px;
-        color:var(--text-dim);
-      ">
-        No badges yet
-      </span>
-    `;
-    return;
-  }
-
-  // --------------------------------
-  // DISPLAY BADGES
-  // --------------------------------
-  latestBadges.forEach((badge) => {
-
-    // Handle both full URLs and /static/... URLs
-    const iconUrl = badge.icon.startsWith("http")
-      ? badge.icon
-      : `https://leetcode.com${badge.icon}`;
-
-    const badgeElement = document.createElement("div");
-
-    badgeElement.className = "leetcode-badge";
-
-    badgeElement.innerHTML = `
-      <img
-        src="${iconUrl}"
-        alt="${badge.displayName}"
-        loading="lazy"
-      >
-
-      <span class="leetcode-badge-name">
-        ${badge.displayName}
-      </span>
-    `;
-
-    badgeContainer.appendChild(badgeElement);
-  });
-}
 
 /* --------- GitHub ---------*/
 
@@ -426,17 +261,24 @@ fetch("data/gitResponse.json")
     .then(response => response.json())
     .then(data => {
 
-        const repos = data.data.user.topRepositories.nodes;
+        const repos = data.data.user.topRepositories.nodes || [];
 
-        const first = repos.find(repo => repo.name === "LeetCode-Sync");
-        const second = repos.find(repo => repo.name === "QR-File-Transfer-System");
-        const third = repos.find(repo => repo.name === "Multi-Threaded_Port_Scanner");
-        const fourth = repos.find(repo => repo.name === "Python-Keystroke-Logger-Educational-Project-");
+        [1, 2, 3, 4].forEach(index => {
+            const repo = repos[index - 1];
+            const titleEl = document.getElementById(`repo${index}-title`);
+            const cardEl = titleEl ? titleEl.closest('.repo-card') : null;
 
-        setRepo(first, 1);
-        setRepo(second, 2);
-        setRepo(third, 3);
-        setRepo(fourth, 4);
+            if (repo && repo.name) {
+                setRepo(repo, index);
+                if (cardEl) {
+                    cardEl.style.display = '';
+                    cardEl.style.cursor = 'pointer';
+                    cardEl.onclick = () => window.open(repo.url, '_blank', 'noopener');
+                }
+            } else if (cardEl) {
+                cardEl.style.display = 'none';
+            }
+        });
 
     })
     .catch(console.error);
@@ -492,6 +334,19 @@ fetch("data/gitResponse.json")
 
     const TotalFollowers = document.getElementById("followerCount");
     TotalFollowers.dataset.target = followerCount;
+
+    // Animate counters directly now that data-target is set
+    [RepoCount, TotalCont, TotalPR, TotalFollowers].forEach(el => {
+      counterIO.unobserve(el);
+      const target = parseInt(el.dataset.target, 10);
+      if(isNaN(target) || target === 0){ el.textContent = '0'; return; }
+      let cur = 0; const step = Math.max(1, Math.floor(target / 50));
+      const t = setInterval(() => {
+        cur += step;
+        if(cur >= target){ cur = target; clearInterval(t); }
+        el.textContent = cur;
+      }, 25);
+    });
 
   });
 
@@ -571,28 +426,28 @@ function buildGithubHeatmap(id, weeks) {
 /* ---------- project modal data ---------- */
 const projectDetails = {
   proj1:{
-    title:'LeetCode Sync',
-    badge:'Automation',
-    desc:'A fully automated pipeline that keeps a GitHub repository in sync with accepted LeetCode submissions — no manual copy-pasting.',
-    features:['Sync accepted solutions automatically','Stores only the best submission per problem','Rollback mechanism for regressions','Status tracking across every run'],
-    tech:['Python','GraphQL','SQLite','GitHub Actions'],
-    link:'https://github.com/Charanreddy0007/LeetCode-Sync'
+    title:'Cybersecurity Job Simulations',
+    badge:'Cybersecurity',
+    desc:'Simulated security assessments involving threat modeling, vulnerability identification, and basic risk analysis conducted for Deloitte Australia and Tata Group simulations.',
+    features:['Simulated security & risk assessments','Threat modeling & vulnerability identification','Incident scenario & attack surface analysis','Mitigation technique & defense evaluation'],
+    tech:['Threat Modeling','Vulnerability Assessment','Risk Analysis','Incident Analysis'],
+    link:'https://github.com/Peeyush3587'
   },
   proj2:{
-    title:'Port Scanner',
-    badge:'Networking',
-    desc:'A from-scratch TCP port scanner using raw sockets, built to understand the three-way handshake and scanning strategies at a low level.',
-    features:['Raw TCP connect scanning','Configurable port ranges and timeouts','Threaded scanning for speed','Clear open/closed/filtered reporting'],
-    tech:['Python','Sockets'],
-    link:'https://github.com/Charanreddy0007/Multi-Threaded_Port_Scanner'
+    title:'Linux System & Security Practice',
+    badge:'Linux & Security',
+    desc:'Hands-on administration and security practice working with Linux file systems, permissions, processes, user management, and Kali Linux system hardening.',
+    features:['Linux file system & permission management','Process & user privilege administration','Access control implementation','System hardening in Kali Linux'],
+    tech:['Linux','Kali Linux','CLI','Access Control'],
+    link:'https://github.com/Peeyush3587'
   },
   proj3:{
-    title:'Educational Keylogger',
-    badge:'Educational Use Only',
-    desc:'A proof-of-concept keylogger built strictly for learning how input-capture and Windows API hooks work, run only inside an isolated, controlled lab environment.',
-    features:['Windows API keyboard hook demonstration','Local, encrypted log output for testing','No network exfiltration — sandboxed by design','Built purely for coursework and research'],
-    tech:['Python','Windows API'],
-    link:'https://github.com/Charanreddy0007/Python-Keystroke-Logger-Educational-Project-'
+    title:'Academic Programming Projects',
+    badge:'Software Development',
+    desc:'Core academic software projects focusing on algorithmic problem solving, memory management, and OOP architecture across C, C++, and Java, plus HTML/CSS.',
+    features:['Memory management & control structures in C/C++','Algorithmic problem-solving','Object-oriented Java applications (classes, inheritance, encapsulation)','Static web interface structure with HTML & CSS'],
+    tech:['C','C++','Java','OOP','HTML/CSS'],
+    link:'https://github.com/Peeyush3587'
   }
 };
 const modalOverlay = document.getElementById('modalOverlay');
@@ -627,12 +482,10 @@ const commands = [
   {label:'Go to About', action:()=>scrollToId('about')},
   {label:'Go to Projects', action:()=>scrollToId('projects')},
   {label:'Go to Skills', action:()=>scrollToId('skills')},
-  {label:'Go to LeetCode Dashboard', action:()=>scrollToId('leetcode')},
   {label:'Go to GitHub Activity', action:()=>scrollToId('github')},
-  {label:'Go to Blog', action:()=>scrollToId('blog')},
   {label:'Go to Contact', action:()=>scrollToId('contact')},
   {label:'Toggle Theme', action:()=>themeToggle.click()},
-  {label:'Copy Email Address', action:()=>{navigator.clipboard.writeText('charan.reddy@example.com');}},
+  {label:'Copy Email Address', action:()=>{navigator.clipboard.writeText('peeyushkrsingh1@gmail.com');}},
 ];
 function scrollToId(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); closeCmdk(); }
 function renderCmdk(filter=''){

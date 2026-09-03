@@ -13,30 +13,11 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-response_file = DATA_DIR / "LeetcodeResponse.json"
 gitresponse_file = DATA_DIR / "gitResponse.json"
 svg_file = DATA_DIR / "github_heatmap.svg"
 
 load_dotenv()
 TOKENGITHUB = os.getenv("TOKENGITHUB")
-
-json_data = {
-    'query': Query.AIP,
-    'variables': {
-        'username': config.leetcodeusername,
-    },
-    'operationName': 'getUserProfile',
-    
-}
-
-response = requests.post('https://leetcode.com/graphql/', json=json_data)
-
-print("Done, LeetCode")
-
-leetcodedata = json.loads(response.content)
-
-with open (response_file, 'w') as f:
-    json.dump(leetcodedata, f, indent=4)
 
 
 

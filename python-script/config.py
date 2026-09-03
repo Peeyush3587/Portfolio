@@ -1,2 +1,1 @@
-leetcodeusername = "Charanreddy0007"
-gtihubusername = "Charanreddy0007"
+gtihubusername = "Peeyush3587" # Replace with your GitHub username

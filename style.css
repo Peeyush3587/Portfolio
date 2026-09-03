@@ -203,24 +203,7 @@ html.light .terminal{ background:#0c0d10; }
 .modal-box{ max-width:620px; width:100%; max-height:85vh; overflow-y:auto; padding:36px; position:relative; }
 .modal-close{ position:absolute; top:18px; right:18px; }
 
-/* leetcode dashboard */
-.lc-grid{ display:grid; grid-template-columns:320px 1fr; gap:24px; }
-.lc-profile{ padding:30px; text-align:center; }
-.avatar{ width:96px; height:96px; border-radius:50%; margin:0 auto 16px; background:linear-gradient(135deg,var(--blue),var(--purple)); display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:700; font-family:var(--font-mono); }
-.lc-stats-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:24px; }
-.stat-box{ padding:20px; text-align:center; }
-.stat-num{ font-size:28px; font-weight:800; font-family:var(--font-mono); }
-.stat-label{ font-size:12px; color:var(--text-dim); margin-top:4px; text-transform:uppercase; letter-spacing:.05em; }
-.diff-bars{ display:flex; flex-direction:column; gap:14px; margin-top:10px; }
-.diff-row{ display:flex; align-items:center; gap:12px; font-size:13px;}
-.diff-label{ width:70px; font-family:var(--font-mono); color:var(--text-dim); }
-.diff-track{ flex:1; height:8px; border-radius:4px; background:rgba(255,255,255,.06); overflow:hidden; }
-.diff-fill{ height:100%; border-radius:4px; width:0%; transition:width 1.4s cubic-bezier(.2,.7,.2,1); }
-.diff-count{ font-family:var(--font-mono); width:36px; text-align:right; color:var(--text-dim); }
-.heatmap{ display:grid; grid-template-columns:repeat(53,1fr); gap:3px; margin-top:14px;}
-.hm-cell{ width:100%; aspect-ratio:1; border-radius:2px; background:rgba(255,255,255,.05); }
-.badges-row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
-.badge-chip{ font-family:var(--font-mono); font-size:11.5px; padding:6px 12px; border-radius:8px; border:1px solid var(--border); background:var(--surface); }
+
 
 /* flow visualization */
 .flow-wrap{ padding:40px; }
@@ -255,13 +238,7 @@ html.light .terminal{ background:#0c0d10; }
 .vt-item h4{ font-size:17px; margin-bottom:6px; }
 .vt-item p{ color:var(--text-dim); font-size:14px; margin:0; }
 
-/* blog */
-.blog-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-.blog-card{ padding:26px; }
-.blog-tag{ font-family:var(--font-mono); font-size:11px; color:var(--purple); text-transform:uppercase; letter-spacing:.06em; }
-.blog-card h3{ font-size:17px; margin:12px 0 10px; line-height:1.4; }
-.blog-card p{ color:var(--text-dim); font-size:13.5px; line-height:1.6; }
-.blog-meta{ display:flex; justify-content:space-between; margin-top:18px; font-size:12px; color:var(--text-faint); font-family:var(--font-mono); }
+
 
 /* achievements */
 .ach-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:18px; }
@@ -310,7 +287,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid va
 /* responsive */
 @media (max-width:980px){
   .hero-grid, .about-grid, .lc-grid{ grid-template-columns:1fr; }
-  .skill-groups, .projects-grid, .blog-grid, .repo-grid{ grid-template-columns:repeat(2,1fr); }
+  .skill-groups, .projects-grid, .repo-grid{ grid-template-columns:repeat(2,1fr); }
   .gh-grid{ grid-template-columns:repeat(2,1fr); }
   .ach-grid{ grid-template-columns:repeat(2,1fr); }
   .nav-links{ display:none; }
@@ -318,7 +295,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid va
 }
 @media (max-width:640px){
   section{ padding:80px 0; }
-  .skill-groups, .projects-grid, .blog-grid, .repo-grid, .gh-grid, .ach-grid{ grid-template-columns:1fr; }
+  .skill-groups, .projects-grid, .repo-grid, .gh-grid, .ach-grid{ grid-template-columns:1fr; }
   .hero{ padding-top:130px; }
   .heatmap{ grid-template-columns:repeat(26,1fr); }
 }
@@ -416,10 +393,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid va
     height: 40px;
 }
 
-#leetcode-icon {
-    width: 24px;
-    height: 24px;
-}
+
 
 .repo-link {
     text-decoration: none;
@@ -427,15 +401,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid va
     display: block;
 }
 
-.blog-link{
-    display:block;
-    text-decoration:none;
-    color:inherit;
-}
 
-.blog-link:hover{
-    color:inherit;
-}
 
 
 .github-heatmap-svg{
@@ -444,97 +410,4 @@ a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid va
     height:auto;
     margin-top:16px;
 }
-
-.leetcode-badges {
-  margin-top: 6px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-}
-
-.leetcode-badges-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-
-.leetcode-badges-title {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: var(--text-dim);
-}
-
-.leetcode-badges-count {
-  font-size: 10px;
-  color: var(--purple);
-  font-weight: 700;
-}
-
-.leetcode-badges-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-}
-
-.leetcode-badge {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 58px;
-  padding: 7px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.025);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.leetcode-badge:hover {
-  transform: translateY(-2px);
-  border-color: var(--purple);
-}
-
-.leetcode-badge img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.leetcode-badge-name {
-  position: absolute;
-  left: 50%;
-  bottom: -28px;
-  transform: translateX(-50%);
-  width: max-content;
-  max-width: 110px;
-  padding: 4px 7px;
-  border-radius: 5px;
-  background: #151515;
-  border: 1px solid var(--border);
-  color: var(--text);
-  font-size: 9px;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 10;
-}
-
-.leetcode-badge:hover .leetcode-badge-name {
-  opacity: 1;
-}
-
-@media (max-width: 600px) {
-  .leetcode-badges-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .leetcode-badge {
-    height: 52px;
-  }
-
-  .leetcode-badge img {
-    width: 34px;
-    height: 34px;
-  }
-}
+
