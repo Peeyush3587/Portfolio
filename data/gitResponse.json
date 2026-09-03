@@ -2,14 +2,8 @@
     "data": {
         "user": {
             "login": "Peeyush3587",
-            "name": "Peeyush Kr. Singh",
-            "avatarUrl": "https://avatars.githubusercontent.com/u/175531191?u=303c76364629c229d84a38764526ab9d85b05c76&v=4",
-            "bio": "\u26a1404: Bugs & Breaches Not Found\r\nCybersecurity & software development enthusiast, securing systems and optimizing code. Always learning, always building.",
             "followers": {
                 "totalCount": 3
-            },
-            "following": {
-                "totalCount": 2
             },
             "repoCount": {
                 "totalCount": 2

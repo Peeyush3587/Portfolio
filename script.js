@@ -66,17 +66,7 @@ const io = new IntersectionObserver((entries)=>{
 }, {threshold:0.15});
 revealEls.forEach(el=> io.observe(el));
 
-/* ---------- diff bars ---------- */
-const diffIO = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      document.querySelectorAll('.diff-fill').forEach(f=>{ f.style.width = f.dataset.w+'%'; });
-      diffIO.disconnect();
-    }
-  });
-},{threshold:0.3});
-const diffSection = document.querySelector('.diff-bars');
-if(diffSection) diffIO.observe(diffSection);
+
 
 /* ---------- terminal typing effect ---------- */
 const termBody = document.getElementById('termBody');
@@ -149,87 +139,7 @@ const counterIO = new IntersectionObserver((entries)=>{
 },{threshold:0.4});
 counters.forEach(c => counterIO.observe(c));
 
-/* ---------- heatmaps ---------- */
-function buildHeatmap(id, calendar) {
-    const el = document.getElementById(id);
-    if (!el) return;
 
-    el.innerHTML = "";
-
-    // Today in UTC
-    const today = new Date();
-
-    const todayUTC = new Date(Date.UTC(
-        today.getUTCFullYear(),
-        today.getUTCMonth(),
-        today.getUTCDate()
-    ));
-
-    // Start ~1 year ago
-    const start = new Date(todayUTC);
-    start.setUTCDate(start.getUTCDate() - 370);
-
-    // Align start to Sunday
-    start.setUTCDate(
-        start.getUTCDate() - start.getUTCDay()
-    );
-
-    // Find the latest date actually present in the JSON
-    const timestamps = Object.keys(calendar).map(Number);
-    const latestTimestamp = Math.max(...timestamps);
-
-    const end = new Date(latestTimestamp * 1000);
-
-    // Normalize to UTC midnight
-    end.setUTCHours(0, 0, 0, 0);
-
-    // Calculate required number of weeks
-    const totalDays = Math.floor(
-        (end - start) / (1000 * 60 * 60 * 24)
-    ) + 1;
-
-    const totalWeeks = Math.ceil(totalDays / 7);
-
-    for (let week = 0; week < totalWeeks; week++) {
-
-        for (let day = 0; day < 7; day++) {
-
-            const d = new Date(start);
-                    
-            d.setUTCDate(
-                start.getUTCDate() + week * 7 + day
-            );
-            
-            // Don't create boxes after the latest date in the JSON
-            if (d > end) continue;
-            
-            const ts = Math.floor(d.getTime() / 1000);
-
-            const count = calendar[String(ts)] || 0;
-
-            const cell = document.createElement("div");
-            cell.className = "hm-cell";
-
-            let color = "rgba(255,255,255,.05)";
-
-            if (count >= 10)
-                color = "#2CF5B9";
-            else if (count >= 5)
-                color = "#20dba3bd";
-            else if (count >= 2)
-                color = "#17b58bc9";
-            else if (count >= 1)
-                color = "#126F5B";
-
-            cell.style.background = color;
-
-            cell.title =
-                `${d.toDateString()} - ${count} submissions`;
-
-            el.appendChild(cell);
-        }
-    }
-}
 
 
 
@@ -260,9 +170,8 @@ function setRepo(repo, card) {
 fetch("data/gitResponse.json")
     .then(response => response.json())
     .then(data => {
-
+        // Pinned / Top Repositories
         const repos = data.data.user.topRepositories.nodes || [];
-
         [1, 2, 3, 4].forEach(index => {
             const repo = repos[index - 1];
             const titleEl = document.getElementById(`repo${index}-title`);
@@ -280,147 +189,62 @@ fetch("data/gitResponse.json")
             }
         });
 
-    })
-    .catch(console.error);
+        // GitHub Stat Counts
+        const totalRepoCount = data.data.user.repoCount.totalCount;
+        const Contributions = data.data.user.contributionsCollection.contributionCalendar.totalContributions;
+        const TotalPr = data.data.mergedPRs.issueCount;
+        const followerCount = data.data.user.followers.totalCount;
 
+        // Language Breakdown
+        const languages = data.data.user.languageBreakdown || [];
+        const languageBar = document.getElementById("language-bar");
+        const languageLegend = document.getElementById("language-legend");
 
-fetch("data/gitResponse.json")
-  .then(response => response.json())
-  .then(data => {
+        if (languageBar && languageLegend) {
+            languageBar.innerHTML = "";
+            languageLegend.innerHTML = "";
+            languages.forEach(lang => {
+                const segment = document.createElement("div");
+                segment.style.width = `${lang.percentage}%`;
+                segment.style.background = lang.color;
+                languageBar.appendChild(segment);
 
-    const totalRepoCount = data.data.user.repoCount.totalCount;
-    const Contributions = data.data.user.contributionsCollection.contributionCalendar.totalContributions;
-    const TotalPr = data.data.mergedPRs.issueCount;
-    const followerCount = data.data.user.followers.totalCount;
+                const item = document.createElement("span");
+                item.innerHTML = `
+                    <span class="lang-dot" style="background:${lang.color};"></span>
+                    ${lang.name} ${lang.percentage}%
+                `;
+                languageLegend.appendChild(item);
+            });
+        }
 
-    const languages = data.data.user.languageBreakdown;
+        const RepoCount = document.getElementById("repoCount");
+        const TotalCont = document.getElementById("contributionCount");
+        const TotalPR = document.getElementById("prCount");
+        const TotalFollowers = document.getElementById("followerCount");
 
-    const languageBar = document.getElementById("language-bar");
-    const languageLegend = document.getElementById("language-legend");
+        if (RepoCount) RepoCount.dataset.target = totalRepoCount;
+        if (TotalCont) TotalCont.dataset.target = Contributions;
+        if (TotalPR) TotalPR.dataset.target = TotalPr;
+        if (TotalFollowers) TotalFollowers.dataset.target = followerCount;
 
-    document.getElementById("achievement-contributions").textContent = Contributions;
-
-
-    languageBar.innerHTML = "";
-    languageLegend.innerHTML = "";
-
-    languages.forEach(lang => {
-
-        const segment = document.createElement("div");
-        segment.style.width = `${lang.percentage}%`;
-        segment.style.background = lang.color;
-
-        languageBar.appendChild(segment);
-
-        const item = document.createElement("span");
-        item.innerHTML = `
-            <span class="lang-dot" style="background:${lang.color};"></span>
-            ${lang.name} ${lang.percentage}%
-        `;
-
-        languageLegend.appendChild(item);
-    });
-
-    const RepoCount = document.getElementById("repoCount");
-    RepoCount.dataset.target = totalRepoCount;
-
-
-    const TotalCont = document.getElementById("contributionCount");
-    TotalCont.dataset.target = Contributions;
-
-    const TotalPR = document.getElementById("prCount");
-    TotalPR.dataset.target = TotalPr;
-
-
-    const TotalFollowers = document.getElementById("followerCount");
-    TotalFollowers.dataset.target = followerCount;
-
-    // Animate counters directly now that data-target is set
-    [RepoCount, TotalCont, TotalPR, TotalFollowers].forEach(el => {
-      counterIO.unobserve(el);
-      const target = parseInt(el.dataset.target, 10);
-      if(isNaN(target) || target === 0){ el.textContent = '0'; return; }
-      let cur = 0; const step = Math.max(1, Math.floor(target / 50));
-      const t = setInterval(() => {
-        cur += step;
-        if(cur >= target){ cur = target; clearInterval(t); }
-        el.textContent = cur;
-      }, 25);
-    });
-
-  });
-
-
-fetch("data/gitResponse.json")
-    .then(response => response.json())
-    .then(data => {
-
-        console.log(data);
-
-        const weeks =
-            data.data.user.contributionsCollection
-                .contributionCalendar.weeks;
-
-        console.log(weeks);
-
-        buildGithubHeatmap("heatmap2", weeks);
-
-    })
-    .catch(console.error);
-
-
-
-/* ---------- GitHub Heatmap ---------- */
-function buildGithubHeatmap(id, weeks) {
-
-    const el = document.getElementById(id);
-    if (!el) return;
-
-    el.innerHTML = "";
-
-    weeks.forEach(week => {
-
-        week.contributionDays.forEach(day => {
-
-            const cell = document.createElement("div");
-            cell.className = "hm-cell";
-
-            let color = "rgba(255,255,255,.05)";
-
-            switch(day.contributionLevel){
-
-                case "FIRST_QUARTILE":
-                    color = "#126F5B";
-                    break;
-
-                case "SECOND_QUARTILE":
-                    color = "#17b58bc9";
-                    break;
-
-                case "THIRD_QUARTILE":
-                    color = "#20dba3bd";
-                    break;
-
-                case "FOURTH_QUARTILE":
-                    color = "#2CF5B9";
-                    break;
-
-                default:
-                    color = "rgba(255,255,255,.05)";
-            }
-
-            cell.style.background = color;
-
-            cell.title =
-                `${day.date}\n${day.contributionCount} contribution${day.contributionCount !== 1 ? "s" : ""}`;
-
-            el.appendChild(cell);
-
+        // Animate counters directly now that data-target is set
+        [RepoCount, TotalCont, TotalPR, TotalFollowers].filter(Boolean).forEach(el => {
+            counterIO.unobserve(el);
+            const target = parseInt(el.dataset.target, 10);
+            if (isNaN(target) || target === 0) { el.textContent = '0'; return; }
+            let cur = 0; const step = Math.max(1, Math.floor(target / 50));
+            const t = setInterval(() => {
+                cur += step;
+                if (cur >= target) { cur = target; clearInterval(t); }
+                el.textContent = cur;
+            }, 25);
         });
+    })
+    .catch(console.error);
 
-    });
 
-}
+
 
 
 /* ---------- project modal data ---------- */
@@ -508,10 +332,6 @@ document.addEventListener('keydown', (e)=>{
   if(e.key==='Escape'){ closeCmdk(); modalOverlay.classList.remove('active'); }
 });
 
-/* ---------- resume button fallback ---------- */
-document.getElementById('resumeBtn').addEventListener('click', (e)=>{
-  e.preventDefault();
-  alert('Add your resume PDF link here to enable this download.');
-});
+
 
 

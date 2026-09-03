@@ -6,15 +6,8 @@ query getUserProfile($username: String!) {
   user(login: $username) {
 
     login
-    name
-    avatarUrl
-    bio
 
     followers {
-      totalCount
-    }
-
-    following {
       totalCount
     }
 
