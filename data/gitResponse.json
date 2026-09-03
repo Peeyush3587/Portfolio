@@ -12,11 +12,11 @@
                 "totalCount": 2
             },
             "repoCount": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "contributionsCollection": {
                 "contributionCalendar": {
-                    "totalContributions": 107,
+                    "totalContributions": 109,
                     "weeks": [
                         {
                             "contributionDays": [
@@ -2070,8 +2070,8 @@
                                 },
                                 {
                                     "date": "2026-09-03",
-                                    "contributionCount": 0,
-                                    "contributionLevel": "NONE"
+                                    "contributionCount": 2,
+                                    "contributionLevel": "THIRD_QUARTILE"
                                 }
                             ]
                         }
@@ -2080,6 +2080,49 @@
             },
             "topRepositories": {
                 "nodes": [
+                    {
+                        "name": "Portfolio",
+                        "description": null,
+                        "url": "https://github.com/Peeyush3587/Portfolio",
+                        "stargazerCount": 0,
+                        "forkCount": 0,
+                        "primaryLanguage": {
+                            "name": "CSS",
+                            "color": "#663399"
+                        },
+                        "languages": {
+                            "edges": [
+                                {
+                                    "size": 21059,
+                                    "node": {
+                                        "name": "CSS",
+                                        "color": "#663399"
+                                    }
+                                },
+                                {
+                                    "size": 18500,
+                                    "node": {
+                                        "name": "HTML",
+                                        "color": "#e34c26"
+                                    }
+                                },
+                                {
+                                    "size": 18300,
+                                    "node": {
+                                        "name": "JavaScript",
+                                        "color": "#f1e05a"
+                                    }
+                                },
+                                {
+                                    "size": 4260,
+                                    "node": {
+                                        "name": "Python",
+                                        "color": "#3572A5"
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "name": "Java-Logic-Building",
                         "description": "Structured Java logic-building practice covering conditionals, loops, patterns, recursion, arrays, strings, and mixed challenges before DSA",
@@ -2106,9 +2149,29 @@
             },
             "languageBreakdown": [
                 {
+                    "name": "CSS",
+                    "percentage": 28.68,
+                    "color": "#663399"
+                },
+                {
+                    "name": "HTML",
+                    "percentage": 25.19,
+                    "color": "#e34c26"
+                },
+                {
+                    "name": "JavaScript",
+                    "percentage": 24.92,
+                    "color": "#f1e05a"
+                },
+                {
                     "name": "Java",
-                    "percentage": 100.0,
+                    "percentage": 15.42,
                     "color": "#b07219"
+                },
+                {
+                    "name": "Python",
+                    "percentage": 5.8,
+                    "color": "#3572A5"
                 }
             ]
         },
