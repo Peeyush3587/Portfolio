@@ -1,12 +1,14 @@
-import requests
-import Query
 import json
 import os
 from collections import defaultdict
-from dotenv import load_dotenv
 from pathlib import Path
-import config
+from xml.etree.ElementTree import Element, ElementTree, SubElement
 
+from dotenv import load_dotenv
+import requests
+
+import config
+import Query
 
 # Path
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,10 +18,15 @@ DATA_DIR.mkdir(exist_ok=True)
 gitresponse_file = DATA_DIR / "gitResponse.json"
 svg_file = DATA_DIR / "github_heatmap.svg"
 
+# Load environment variables
 load_dotenv()
-TOKENGITHUB = os.getenv("TOKENGITHUB")
 
+# Sanitize token to strip whitespace, newlines, or accidental quotes
+raw_token = os.getenv("TOKENGITHUB") or os.getenv("GITHUB_TOKEN") or ""
+TOKENGITHUB = raw_token.strip().strip("'\"")
 
+if not TOKENGITHUB:
+    raise ValueError("TOKENGITHUB environment variable is missing or empty.")
 
 
 # ==================
@@ -46,7 +53,17 @@ response = requests.post(
     headers=headers,
 )
 
+if response.status_code == 401:
+    raise RuntimeError(
+        "GitHub GraphQL API returned 401 Unauthorized (Bad credentials). "
+        "The TOKENGITHUB token is invalid or expired. "
+        "Please verify or update the TOKENGITHUB secret in your GitHub repository settings."
+    )
+response.raise_for_status()
+
 githubdata = response.json()
+if "errors" in githubdata:
+    raise RuntimeError(f"GitHub GraphQL query returned errors: {githubdata['errors']}")
 
 # Convenience variable
 data = githubdata["data"]
@@ -83,8 +100,10 @@ with open(gitresponse_file, "w") as f:
 
 print("Done, GitHub")
 
-from xml.etree.ElementTree import Element, SubElement, ElementTree
 
+# ==================
+#    HEATMAP SVG
+# ==================
 
 weeks = githubdata["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
