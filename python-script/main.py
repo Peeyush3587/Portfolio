@@ -24,7 +24,7 @@ load_dotenv()
 # ==================
 
 # Load and validate token
-TOKENGITHUB = os.getenv("TOKENGITHUB")
+TOKENGITHUB = os.getenv("TOKENGITHUB", "").strip()
 
 if not TOKENGITHUB:
     raise ValueError("TOKENGITHUB environment variable is not set")
