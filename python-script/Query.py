@@ -1,6 +1,3 @@
-
-
-
 GITHUB = """
 query getUserProfile($username: String!) {
   user(login: $username) {
