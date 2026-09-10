@@ -1,12 +1,14 @@
-import requests
-import Query
 import json
 import os
 from collections import defaultdict
-from dotenv import load_dotenv
 from pathlib import Path
-import config
+from xml.etree.ElementTree import Element, ElementTree, SubElement
 
+from dotenv import load_dotenv
+import requests
+
+import config
+import Query
 
 # Path
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,18 +18,21 @@ DATA_DIR.mkdir(exist_ok=True)
 gitresponse_file = DATA_DIR / "gitResponse.json"
 svg_file = DATA_DIR / "github_heatmap.svg"
 
+# Load environment variables
 load_dotenv()
+
+# Sanitize token to strip whitespace, newlines, or accidental quotes
+raw_token = os.getenv("TOKENGITHUB") or os.getenv("GITHUB_TOKEN") or ""
+TOKENGITHUB = raw_token.strip().strip("'\"")
+
+if not TOKENGITHUB:
+    raise ValueError("TOKENGITHUB environment variable is missing or empty.")
 
 
 # ==================
 #      GITHUB
 # ==================
 
-# Load and validate token
-TOKENGITHUB = os.getenv("TOKENGITHUB", "").strip()
-
-if not TOKENGITHUB:
-    raise ValueError("TOKENGITHUB environment variable is not set")
 
 json_data = {
     "query": Query.GITHUB,
@@ -38,7 +43,7 @@ json_data = {
 }
 
 headers = {
-    "Authorization": f"token {TOKENGITHUB}",
+    "Authorization": f"Bearer {TOKENGITHUB}",
     "Content-Type": "application/json",
 }
 
@@ -47,6 +52,9 @@ response = requests.post(
     json=json_data,
     headers=headers,
 )
+
+# Raise an exception if the HTTP request failed (4xx/5xx)
+response.raise_for_status()
 
 githubdata = response.json()
 
@@ -85,8 +93,10 @@ with open(gitresponse_file, "w") as f:
 
 print("Done, GitHub")
 
-from xml.etree.ElementTree import Element, SubElement, ElementTree
 
+# ==================
+#    HEATMAP SVG
+# ==================
 
 weeks = githubdata["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
