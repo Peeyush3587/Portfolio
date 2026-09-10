@@ -17,15 +17,17 @@ gitresponse_file = DATA_DIR / "gitResponse.json"
 svg_file = DATA_DIR / "github_heatmap.svg"
 
 load_dotenv()
-TOKENGITHUB = os.getenv("TOKENGITHUB")
-
-
 
 
 # ==================
 #      GITHUB
 # ==================
 
+# Load and validate token
+TOKENGITHUB = os.getenv("TOKENGITHUB")
+
+if not TOKENGITHUB:
+    raise ValueError("TOKENGITHUB environment variable is not set")
 
 json_data = {
     "query": Query.GITHUB,
@@ -36,7 +38,7 @@ json_data = {
 }
 
 headers = {
-    "Authorization": f"Bearer {TOKENGITHUB}",
+    "Authorization": f"token {TOKENGITHUB}",
     "Content-Type": "application/json",
 }
 
