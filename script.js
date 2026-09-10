@@ -241,7 +241,20 @@ fetch("data/gitResponse.json")
             }, 25);
         });
     })
-    .catch(console.error);
+    .catch(err => {
+        console.error('[GitHub stats] Failed to load data/gitResponse.json:', err);
+        const statsSection = document.getElementById('github');
+        if (statsSection) {
+            const notice = statsSection.querySelector('.github-stats-notice');
+            if (!notice) {
+                const el = document.createElement('p');
+                el.className = 'github-stats-notice';
+                el.style.cssText = 'text-align:center;color:var(--text-dim);padding:1rem;';
+                el.textContent = 'GitHub stats unavailable.';
+                statsSection.prepend(el);
+            }
+        }
+    });
 
 
 
