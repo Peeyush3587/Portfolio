@@ -6,11 +6,11 @@
                 "totalCount": 4
             },
             "repoCount": {
-                "totalCount": 2
+                "totalCount": 3
             },
             "contributionsCollection": {
                 "contributionCalendar": {
-                    "totalContributions": 117,
+                    "totalContributions": 123,
                     "weeks": [
                         {
                             "contributionDays": [
@@ -2069,8 +2069,8 @@
                                 },
                                 {
                                     "date": "2026-10-09",
-                                    "contributionCount": 0,
-                                    "contributionLevel": "NONE"
+                                    "contributionCount": 6,
+                                    "contributionLevel": "FOURTH_QUARTILE"
                                 }
                             ]
                         }
@@ -2079,6 +2079,28 @@
             },
             "topRepositories": {
                 "nodes": [
+                    {
+                        "name": "Basic-Network-Sniffer",
+                        "description": null,
+                        "url": "https://github.com/Peeyush3587/Basic-Network-Sniffer",
+                        "stargazerCount": 0,
+                        "forkCount": 0,
+                        "primaryLanguage": {
+                            "name": "Python",
+                            "color": "#3572A5"
+                        },
+                        "languages": {
+                            "edges": [
+                                {
+                                    "size": 28024,
+                                    "node": {
+                                        "name": "Python",
+                                        "color": "#3572A5"
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "name": "Portfolio",
                         "description": null,
@@ -2148,29 +2170,29 @@
             },
             "languageBreakdown": [
                 {
+                    "name": "Python",
+                    "percentage": 33.85,
+                    "color": "#3572A5"
+                },
+                {
                     "name": "HTML",
-                    "percentage": 28.25,
+                    "percentage": 20.13,
                     "color": "#e34c26"
                 },
                 {
                     "name": "CSS",
-                    "percentage": 26.83,
+                    "percentage": 19.11,
                     "color": "#663399"
                 },
                 {
                     "name": "JavaScript",
-                    "percentage": 21.47,
+                    "percentage": 15.29,
                     "color": "#f1e05a"
                 },
                 {
                     "name": "Java",
-                    "percentage": 16.32,
+                    "percentage": 11.62,
                     "color": "#b07219"
-                },
-                {
-                    "name": "Python",
-                    "percentage": 7.14,
-                    "color": "#3572A5"
                 }
             ]
         },
